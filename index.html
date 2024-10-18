@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SafeHouse: The best platform for facility management with advanced security, convenience, and community features.">
+    <meta name="keywords"
+        content="SafeHouse, facility management, security, access control, maintenance, asset management">
+    <meta property="og:title" content="SafeHouse">
+    <meta property="og:description"
+        content="SafeHouse offers secure and convenient access control systems, digital management, and improved tenant experiences.">
+    <title>SafeHouse</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css"> <!-- Link to the compiled CSS -->
+</head>
+
+<body class="font-poppins text-gray-900 bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 bg-gray-900 bg-opacity-80 text-white z-50 backdrop-blur-lg shadow-lg transition-all duration-300">
+        <a href="#" class="logo flex items-center">
+            <img src="assets/Capture1121-removebg-preview.png" alt="Logo" class="h-12 w-auto">
+        </a>
+        <button id="nav-toggle" class="lg:hidden w-10 h-10 mx-4 bg-orange-600 rounded-full cursor-pointer flex items-center justify-center">
+            <img src="assets/menu.png" class="w-6 h-6">
+        </button>
+        <nav id="nav" class="lg:flex lg:flex-grow justify-end space-x-4 text-sm md:text-base fixed top-0 right-0 h-full w-full lg:static lg:h-auto lg:w-auto bg-black lg:bg-transparent bg-opacity-90 lg:transform-none transform translate-x-full transition-transform duration-500 ease-in-out">
+            <button id="nav-close-inside" class="lg:hidden absolute top-4 right-4 w-10 h-10 rounded-full cursor-pointer flex items-center justify-center transition duration-300">
+                <img src="assets/close.png" class="w-6 h-6">
+            </button>
+            <ul class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 p-8 lg:p-0">
+                <li><a href="#" class="nav-link hover:bg-orange-600 text-white px-4 py-2 rounded-md transition duration-300">Home</a></li>
+                <li><a href="#about" class="nav-link hover:bg-orange-600 text-white px-4 py-2 rounded-md transition duration-300">About Us</a></li>
+                <li><a href="https://client.safehouse.co.ke/" class="nav-link hover:bg-orange-600 text-white px-4 py-2 rounded-md transition duration-300">Sign Up</a></li>
+                <li><a href="#contact" class="nav-link hover:bg-orange-600 text-white px-4 py-2 rounded-md transition duration-300">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center hero" style="background-image: url('assets/bios.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-white text-center flex flex-col justify-center items-center h-full">
+            <h1 class="text-4xl sm:text-6xl font-bold leading-tight">Welcome to SafeHouse</h1>
+            <p class="mt-4 text-lg sm:text-xl">Your trusted partner in advanced facility management and security solutions.</p>
+            <a href="#contact" class="mt-8 inline-block px-6 py-3 bg-orange-600 text-white rounded-full hover:bg-orange-500 transition ease-in-out duration-300">Get in Touch</a>
+        </div>
+    </section>
+
+    <main class="mt-12">
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-8 bg-gray-100 rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="md:w-1/2 p-8">
+                    <img src="assets/aboutus.jpg" alt="About Us Image" class="w-full rounded-lg shadow-lg" loading="lazy">
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <h2 class="text-2xl font-bold">About Us</h2>
+                    <hr class="my-4 border-orange-600 w-16">
+                    <p class="mt-4">SafeHouse is a comprehensive facility management application designed for facility owners and managers. It is versatile enough to be used across various types of facilities, including rental properties, commercial spaces, and other facilities requiring maintenance, security, and asset management.</p>
+                    <p>The application is structured into four core modules:</p>
+                    <ul class="list-disc ml-8">
+                        <li>Maintenance Management</li>
+                        <li>Asset Management</li>
+                        <li>Access Control</li>
+                        <li>Client Experience</li>
+                    </ul>
+                    <p class="pb-4">Safehouse supports centralized management of single or multiple facilities and is accessible via both web and mobile applications, each tailored to meet specific operational needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safehouse Modules Section -->
+        <section class="container mx-auto px-4 py-8 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-center">Safehouse Modules</h2>
+            <hr class="my-4 border-orange-600 w-16 mx-auto">
+            <div class="mt-6">
+                <!-- Maintenance Management Module -->
+                <div class="flex flex-col md:flex-row items-center mt-8">
+                    <div class="md:w-1/2 p-4">
+                        <img src="assets/maint.jpg" alt="Maintenance Management Image" class="w-full rounded-lg shadow-lg" loading="lazy">
+                    </div>
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-lg sm:text-xl font-semibold">Maintenance Management Module</h3>
+                        <p class="mt-2 text-sm sm:text-base">Our Maintenance Management module ensures seamless management of all maintenance tasks. Key features include:</p>
+                        <ul class="list-disc list-inside mt-2 text-sm sm:text-base">
+                            <li>Automated Work Order Creation</li>
+                            <li>Service Tracking</li>
+                            <li>Real-time Reporting</li>
+                        </ul>
+                        <p class="mt-2 text-sm sm:text-base">Streamline maintenance processes, enhance responsiveness, and keep facilities in optimal condition.</p>
+                    </div>
+                </div>
+
+                <!-- Asset Management Module -->
+                <div class="flex flex-col md:flex-row items-center mt-8">
+                    <div class="md:w-1/2 p-4">
+                        <img src="assets/assets.jpg" alt="Asset Management Image" class="w-full rounded-lg shadow-lg" loading="lazy">
+                    </div>
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-lg sm:text-xl font-semibold">Asset Management Module</h3>
+                        <p class="mt-2 text-sm sm:text-base">The Asset Management module provides complete oversight of facility assets. Key features include:</p>
+                        <ul class="list-disc list-inside mt-2 text-sm sm:text-base">
+                            <li>Inventory Tracking</li>
+                            <li>Lifecycle Management</li>
+                            <li>Performance Analysis</li>
+                        </ul>
+                        <p class="mt-2 text-sm sm:text-base">Optimize asset utilization, reduce costs, and extend asset lifecycles with this comprehensive module.</p>
+                    </div>
+                </div>
+
+                <!-- Access Control Module -->
+                <div class="flex flex-col md:flex-row items-center mt-8">
+                    <div class="md:w-1/2 p-4">
+                        <img src="assets/accescontrol.jpg" alt="Access Control Image" class="w-full rounded-lg shadow-lg" loading="lazy">
+                    </div>
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-lg sm:text-xl font-semibold">Access Control Module</h3>
+                        <p class="mt-2 text-sm sm:text-base">The Access Control module is designed to enhance security across facilities. Key features include:</p>
+                        <ul class="list-disc list-inside mt-2 text-sm sm:text-base">
+                            <li>Automated Access Requests</li>
+                            <li>Visitor Management</li>
+                            <li>Real-time Monitoring</li>
+                        </ul>
+                        <p class="mt-2 text-sm sm:text-base">The system automates access requests for residents and employees, and offers secure management of visitor access. Real-time monitoring ensures compliance with security protocols and improves overall safety.</p>
+                    </div>
+                </div>
+
+                <!-- Client Experience Module -->
+                <div class="flex flex-col md:flex-row items-center mt-8">
+                    <div class="md:w-1/2 p-4">
+                        <img src="assets/user.jpg" alt="Client Experience Image" class="w-full rounded-lg shadow-lg" loading="lazy">
+                    </div>
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-lg sm:text-xl font-semibold">Client Experience Module</h3>
+                        <p class="mt-2 text-sm sm:text-base">The Client Experience module improves tenant interactions by providing:</p>
+                        <ul class="list-disc list-inside mt-2 text-sm sm:text-base">
+                            <li>Online Payment Options</li>
+                            <li>Service Requests</li>
+                            <li>Tenant Feedback</li>
+                        </ul>
+                        <p class="mt-2 text-sm sm:text-base">This module enables residents to pay rent and submit maintenance requests online, enhancing tenant satisfaction and retention.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-8 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold text-center">Contact Us</h2>
+                <hr class="my-4 border-orange-600 w-16 mx-auto">
+                <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-orange-600 focus:ring focus:ring-orange-600 focus:ring-opacity-50">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-orange-600 focus:ring focus:ring-orange-600 focus:ring-opacity-50">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                        <textarea id="message" name="message" required rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-orange-600 focus:ring focus:ring-orange-600 focus:ring-opacity-50"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-500 transition ease-in-out duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2024 SafeHouse. All rights reserved.</p>
+            <ul class="flex justify-center space-x-4 mt-2">
+                <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

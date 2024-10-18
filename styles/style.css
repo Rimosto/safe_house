@@ -1,0 +1,58 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(17, 17, 17, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+header .nav-link:hover {
+  background-color: #ff4d00;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  #nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out;
+    z-index: 50;
+  }
+  .nav-open {
+    transform: translateX(0);
+  }
+  #nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  #nav-close-inside {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+button:hover, a:hover {
+  background-color: #ff4d00;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer {
+  background-color: #040404;
+}
+footer p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

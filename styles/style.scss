@@ -1,0 +1,78 @@
+// Define Variables for Reusability
+$primary-color: #ff4d00;
+$secondary-color: #d1e5ff;
+$background-color: #111;
+$text-color: #ffffff;
+$font-family: 'Poppins', sans-serif;
+
+// Base Styles
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $text-color;
+    scroll-behavior: smooth;
+}
+
+// Header Styles
+header {
+    background-color: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+
+    .nav-link {
+        &:hover {
+            background-color: $primary-color;
+            transition: background-color 0.3s ease;
+        }
+    }
+}
+
+// Media query for small devices (up to 1024px)
+@media (max-width: 1024px) {
+  #nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out;
+    z-index: 50;
+  }
+
+  .nav-open {
+    transform: translateX(0);
+  }
+
+  #nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #nav-close-inside {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+// Button Hover Effect
+button, a {
+    &:hover {
+        background-color: $primary-color;
+        color: $text-color;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
+
+// Footer
+footer {
+    background-color: darken($background-color, 5%);
+    p {
+        color: lighten($text-color, 40%);
+    }
+}
